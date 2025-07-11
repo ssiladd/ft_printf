@@ -6,7 +6,7 @@
 /*   By: sevdemir <sevdemir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/11 15:43:31 by sevdemir          #+#    #+#             */
-/*   Updated: 2025/07/11 15:43:32 by sevdemir         ###   ########.fr       */
+/*   Updated: 2025/07/11 16:32:56 by sevdemir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,10 +26,8 @@ static void find_format(const char *format, va_list args, int i, int *len)
         ft_putstr(va_arg(args, char *), len);
     else if(flag == 'p')
         ft_putptr(va_arg(args, void *), len);
-    else if(flag == 'x')
-        ft_puthex(va_arg(args, unsigned int), 0, len);
-    else if(flag == 'X')
-        ft_puthex(va_arg(args, unsigned int), 1, len);
+    else if(flag == 'x' || flag == 'X')
+        ft_puthex(va_arg(args, unsigned int), flag, len);
     else if(flag == '%')
         ft_putchar('%', len);
     else
