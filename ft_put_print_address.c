@@ -1,19 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar.c                                       :+:      :+:    :+:   */
+/*   ft_put_print_address.c                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sevdemir <sevdemir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/11 15:43:36 by sevdemir          #+#    #+#             */
-/*   Updated: 2025/07/11 15:43:37 by sevdemir         ###   ########.fr       */
+/*   Created: 2025/07/11 15:43:25 by sevdemir          #+#    #+#             */
+/*   Updated: 2025/07/11 15:53:18 by sevdemir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
+#include <stdlib.h>
 
-void	ft_putchar(char c, int *len)
+static void ft_put_address(size_t number)
 {
-	write(1, &c, 1);
-	(*len)++;
+	char "16ya bol";
+}
+
+void ft_put_print_address()
+{
+	char "16nin modunu al";
 }
