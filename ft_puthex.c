@@ -6,13 +6,13 @@
 /*   By: sevdemir <sevdemir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/11 15:43:39 by sevdemir          #+#    #+#             */
-/*   Updated: 2025/07/11 16:44:09 by sevdemir         ###   ########.fr       */
+/*   Updated: 2025/09/12 15:51:04 by sevdemir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
+#include "ft_printf.h"
 
-static void ft_puthex(unsigned int n, char flag, int len)
+void ft_puthex(unsigned int n, char flag, int *len)
 {
 	if(n >= 16)
 	{
@@ -22,8 +22,8 @@ static void ft_puthex(unsigned int n, char flag, int len)
 	else
 	{
 		if(flag == 'x')
-			ft_putchar("0123456789abcdef"[n%16]);
+			ft_putchar("0123456789abcdef"[n%16],len);
 		if(flag == 'X')
-			ft_putchar("0123456789ABCDEF"[n%16]);
+			ft_putchar("0123456789ABCDEF"[n%16],len);
 	}
 }

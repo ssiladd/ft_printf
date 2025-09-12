@@ -10,20 +10,20 @@ SRC = ft_printf.c \
 	  ft_put_print_address.c \
 	  ft_putunsigned.c
 
-OBJ = $(SRC:.c=.o)
+# OBJ = $(SRC:.c=.o)
 
 all: $(NAME)
-%.o: %.c
-	$(CC) $(CFLAGS) -c $< -o $@
+# %.o: %.c
+# 	$(CC) $(CFLAGS) -c $< -o $@
 
-$(NAME): $(OBJ)
-	ar rcs $(NAME) $(OBJ)
+# $(NAME): $(OBJ)
+$(NAME):
+	ar rcs $(NAME)
 
 clean:
-	rm -f $(OBJ)
+	rm -f $(NAME)
 
 fclean: clean
-	rm -f $(NAME)
 
 re: fclean all
 

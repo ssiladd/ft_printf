@@ -1,17 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   printf.h                                           :+:      :+:    :+:   */
+/*   ft_printf.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sevdemir <sevdemir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/11 15:43:49 by sevdemir          #+#    #+#             */
-/*   Updated: 2025/07/11 16:30:38 by sevdemir         ###   ########.fr       */
+/*   Updated: 2025/09/12 15:51:21 by sevdemir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef printf.h
-# define printf.h
+#ifndef FT_PRINTF_H
+# define FT_PRINTF_H
 
 # include <stdarg.h>
 # include <stdlib.h>
@@ -22,7 +22,7 @@ void	ft_putchar(char c, int *len);
 void	ft_putnbr(int n, int *len);
 void	ft_putnbr_unsigned(unsigned int n, int *len);
 void	ft_putstr(char *s, int *len);
-void	ft_print_pointer_address(void *ptr, int *len);
-void	ft_puthex(unsigned int number, int *len, char *base);
+void	ft_put_print_address(void *ptr, int *len);
+void	ft_puthex(unsigned int n, char flag, int *len);
 
 #endif
