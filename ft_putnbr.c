@@ -12,7 +12,7 @@
 
 #include "printf.h"
 
-void	ft_putnbr(int n, int *len)
+static void	ft_putnbr(int n, int *len)
 {
 	long	number;
 

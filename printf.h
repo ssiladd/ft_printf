@@ -10,8 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef PRINTF_H
-# define PRINTF_H
+#ifndef printf.h
+# define printf.h
 
 # include <stdarg.h>
 # include <stdlib.h>

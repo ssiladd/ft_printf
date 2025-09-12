@@ -10,7 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-void ft_puthex(unsigned int n, char flag, int len)
+#include "printf.h"
+
+static void ft_puthex(unsigned int n, char flag, int len)
 {
 	if(n >= 16)
 	{

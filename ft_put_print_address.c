@@ -11,13 +11,26 @@
 /* ************************************************************************** */
 
 #include <stdlib.h>
+#include "printf.h"
 
 static void ft_put_address(size_t number)
 {
-	char "16ya bol";
+	if (number >= 16)
+	{
+		ft_put_address(number / 16);
+		ft_put_address(number % 16);
+	}
+	else
+	{
+		ft_putchar("0123456789abcdef"[number % 16]);
+	}
 }
 
-void ft_put_print_address()
+static void ft_put_print_address(void *ptr)
 {
-	char "16nin modunu al";
+	size_t	address;
+
+	address = (size_t)ptr;
+	write(1, "0x", 2);
+	ft_put_address(address);
 }

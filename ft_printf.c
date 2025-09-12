@@ -11,6 +11,8 @@
 /* ************************************************************************** */
 
 #include <stdarg.h>
+#include "printf.h"
+
 static void find_format(const char *format, va_list args, int i, int *len)
 {
     char flag;
@@ -60,4 +62,4 @@ int	ft_printf(const char *format, ...)
 	}
 	va_end(args);
 	return (len);
-} 
+}
