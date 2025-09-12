@@ -8,22 +8,22 @@ SRC = ft_printf.c \
 	  ft_puthex.c \
 	  ft_putptr.c \
 	  ft_put_print_address.c \
-	  ft_putunsigned.c
+	  ft_putnbr_unsigned.c
 
-# OBJ = $(SRC:.c=.o)
+OBJ = $(SRC:.c=.o)
 
 all: $(NAME)
-# %.o: %.c
-# 	$(CC) $(CFLAGS) -c $< -o $@
+%.o: %.c
+	$(CC) $(CFLAGS) -c $< -o $@
 
-# $(NAME): $(OBJ)
-$(NAME):
-	ar rcs $(NAME)
+$(NAME): $(OBJ)
+	ar rcs $(NAME) $(OBJ)
 
 clean:
-	rm -f $(NAME)
+	rm -f $(OBJ)
 
 fclean: clean
+	rm -f $(NAME)
 
 re: fclean all
 
