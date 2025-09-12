@@ -6,13 +6,13 @@
 /*   By: sevdemir <sevdemir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/11 15:43:41 by sevdemir          #+#    #+#             */
-/*   Updated: 2025/09/12 15:51:04 by sevdemir         ###   ########.fr       */
+/*   Updated: 2025/09/12 16:15:15 by sevdemir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-static void	ft_putnbr_unsigned(unsigned int n, int *len)
+void	ft_putnbr_unsigned(unsigned int n, int *len)
 {
 	if (n >= 10)
 		ft_putnbr_unsigned(n / 10, len);
