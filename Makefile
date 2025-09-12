@@ -1,12 +1,11 @@
 NAME = libftprintf.a
 CC = cc
-CFLAGS = -Wall -Wextra -Werror
+CFLAGS = -Wall -Wextra -Werror -fPIE
 SRC = ft_printf.c \
 	  ft_putchar.c \
 	  ft_putstr.c \
 	  ft_putnbr.c \
 	  ft_puthex.c \
-	  ft_putptr.c \
 	  ft_put_print_address.c \
 	  ft_putnbr_unsigned.c
 

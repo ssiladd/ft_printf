@@ -6,7 +6,7 @@
 /*   By: sevdemir <sevdemir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/11 15:43:43 by sevdemir          #+#    #+#             */
-/*   Updated: 2025/09/12 15:51:04 by sevdemir         ###   ########.fr       */
+/*   Updated: 2025/09/12 16:49:07 by sevdemir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_putnbr(int n, int *len)
 {
-	long	number;
+	long number;
 
 	number = n;
 	if (number == -2147483648)

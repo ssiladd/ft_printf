@@ -6,13 +6,13 @@
 /*   By: sevdemir <sevdemir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/11 15:43:46 by sevdemir          #+#    #+#             */
-/*   Updated: 2025/09/12 16:16:10 by sevdemir         ###   ########.fr       */
+/*   Updated: 2025/09/12 16:49:11 by sevdemir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
- static int	ft_strlen(const char *s)
+static int	ft_strlen(const char *s)
 {
 	int	i;
 
