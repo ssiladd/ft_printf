@@ -6,12 +6,11 @@
 /*   By: sevdemir <sevdemir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/11 15:43:31 by sevdemir          #+#    #+#             */
-/*   Updated: 2025/09/12 16:33:27 by sevdemir         ###   ########.fr       */
+/*   Updated: 2025/09/17 17:26:07 by sevdemir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
-#include <stdarg.h>
 
 static void	find_format(const char *format, va_list args, int i, int *len)
 {

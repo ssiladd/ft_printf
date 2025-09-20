@@ -6,14 +6,13 @@
 /*   By: sevdemir <sevdemir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/11 15:43:25 by sevdemir          #+#    #+#             */
-/*   Updated: 2025/09/12 16:56:39 by sevdemir         ###   ########.fr       */
+/*   Updated: 2025/09/17 17:28:57 by sevdemir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
-#include <stdlib.h>
 
-static void	ft_put_address(size_t	number, int	*len)
+static void	ft_put_address(size_t number, int *len)
 {
 	if (number >= 16)
 	{
